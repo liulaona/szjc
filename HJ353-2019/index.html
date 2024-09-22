@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水污染源在线监测系统测试值计算</title>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>注：此表格用于水质自动检测仪-自检记录表的计算，遵循标准HJ353-2019，<a href="HJ353-2019.pdf">点击此处下载</a></p>
+    <h3>示值误差计算</h3>
+    <p>输入三次测量值和溶液浓度后点击<b>示值误差</b>按钮，进行计算</p>
+    <table id="table-1" cellspacing="0" border="1" class="container">
+        <tr>
+            <td class="box">溶液浓度（mg/L）</td>
+            <td class="box">测量值1</td>
+            <td class="box">测量值2</td>
+            <td class="box">测量值3</td>
+            <td class="box"><button id="button1">示值误差</button></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="s0"></td>
+            <td><input type="text" id="s1"></td>
+            <td><input type="text" id="s2"></td>
+            <td><input type="text" id="s3"></td>
+            <td id="szwc"></td>
+
+        </tr>
+    </table>
+
+    <h3>重复性计算</h3>
+    <p>输入六次测量值后点击<b>重复性</b>按钮，进行计算</p>
+    <table id="table-2" cellspacing="0" border="1" class="container">
+        <tr>
+            <td class="box1">测量值1</td>
+            <td class="box1">测量值2</td>
+            <td class="box1">测量值3</td>
+            <td class="box1">测量值4</td>
+            <td class="box1">测量值5</td>
+            <td class="box1">测量值6</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="c1"></td>
+            <td><input type="text" id="c2"></td>
+            <td><input type="text" id="c3"></td>
+            <td><input type="text" id="c4"></td>
+            <td><input type="text" id="c5"></td>
+            <td><input type="text" id="c6"></td>
+
+        </tr>
+        <tr>
+            <td><button id="button2">重复性</button></td>
+            <td id="cfx" colspan="5"></td>
+        </tr>
+    </table>
+
+    <h3>低/高浓度漂移计算</h3>
+    <p>输入24次测量值和量程上限后点击<b>漂移值</b>按钮，进行计算</p>
+    <table id="table-3" cellspacing="0" border="1" class="container">
+        <tr>
+            <td><button id="button3">漂移值</button></td>
+            <td id="pyi" colspan="2"></td>
+            <td>量程上限</td>
+            <td colspan="2"><input type="text" id="lcsx"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="p1" placeholder="测量值1"></td>
+            <td><input type="text" id="p2" placeholder="测量值2"></td>
+            <td><input type="text" id="p3" placeholder="测量值3"></td>
+            <td><input type="text" id="p4" placeholder="测量值4"></td>
+            <td><input type="text" id="p5" placeholder="测量值5"></td>
+            <td><input type="text" id="p6" placeholder="测量值6"></td>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="p7" placeholder="测量值7"></td>
+            <td><input type="text" id="p8" placeholder="测量值8"></td>
+            <td><input type="text" id="p9" placeholder="测量值9"></td>
+            <td><input type="text" id="p10" placeholder="测量值10"></td>
+            <td><input type="text" id="p11" placeholder="测量值11"></td>
+            <td><input type="text" id="p12" placeholder="测量值12"></td>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="p13" placeholder="测量值13"></td>
+            <td><input type="text" id="p14" placeholder="测量值14"></td>
+            <td><input type="text" id="p15" placeholder="测量值15"></td>
+            <td><input type="text" id="p16" placeholder="测量值16"></td>
+            <td><input type="text" id="p17" placeholder="测量值17"></td>
+            <td><input type="text" id="p18" placeholder="测量值18"></td>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="p19" placeholder="测量值19"></td>
+            <td><input type="text" id="p20" placeholder="测量值20"></td>
+            <td><input type="text" id="p21" placeholder="测量值21"></td>
+            <td><input type="text" id="p22" placeholder="测量值22"></td>
+            <td><input type="text" id="p23" placeholder="测量值23"></td>
+            <td><input type="text" id="p24" placeholder="测量值24"></td>
+
+        </tr>
+    </table>
+</body>
+<!-- 1
+2
+3
+4
+5
+6
+7
+8
+9 -->
+</html>
